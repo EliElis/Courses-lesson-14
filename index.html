@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>My Angular page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+     <script src="script.js"></script>  
+</head>
+<body class="w-100 {{sample.changeStyle.body}}" ng-controller="defaultCtrl as sample">
+ <div class="row">
+     <div class="col-12">
+      <h1 class="text-center {{sample.changeStyle.h1}}">My Angular page</h1> 
+         <p class="text-center  {{sample.changeStyle.p}}">You can change style:</p> 
+     </div>
+ </div>
+   
+   <div class="row">
+       <div class="col-12 d-flex justify-content-center">
+           <button type="button" class="btn btn-sm {{sample.changeStyle.btn}}" ng-click="sample.btn1()">Style1</button>
+           <button type="button" class="btn btn-sm {{sample.changeStyle.btn}}" ng-click="sample.btn2()">Style2</button>
+           <button type="button" class="btn btn-sm {{sample.changeStyle.btn}}" ng-click="sample.btn3()">Style3</button>
+       </div>
+   </div>
+   
+   <div class="row">
+       <div class="col-4 box {{sample.changeStyle.box}}">
+           <h5>Column1</h5>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+           <p>Maiores incidunt, impedit repudiandae deserunt expedita dignissimos...</p>
+       </div>
+       <div class="col-4 box">
+            <h5>Column2</h5>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+           <p>Maiores incidunt, impedit repudiandae deserunt expedita dignissimos...</p>
+       </div>
+       <div class="col-4 box  {{sample.changeStyle.box}}">
+             <h5>Column3</h5>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+           <p>Maiores incidunt, impedit repudiandae deserunt expedita dignissimos...</p>
+       </div>
+   </div>
+
+   
+      
+         
+</body>
+</html>
